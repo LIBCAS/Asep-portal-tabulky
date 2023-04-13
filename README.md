@@ -44,7 +44,7 @@ Konkrétně se jedná o následující strukturu (`/wp/tabulky-asep/documents.js
 }
 `
 
-Spustit generování souboru .html návštěvou https://asep-portal.lib.cas.cz/wp/tabulky-asep/generate.php?id=<document-id> pro generování a získání názvu souboru .html.
+Spustit generování souboru .html návštěvou `https://asep-portal.lib.cas.cz/wp/tabulky-asep/generate.php?id=<document-id>` pro generování a získání názvu souboru .html.
 
 A vložit kód pro vytvoření zkráceného kódu do souboru functions.php:
 
