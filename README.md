@@ -1,6 +1,6 @@
 # Dokumentace aplikace pro generování tabulek ASEP
 
-Tento dokument obsahuje informace o aplikaci pro generování tabulek ASEP. Aplikace slouží k zobrazování dat z Google Sheets tabulek na webové stránce ASEP.
+Tento dokument obsahuje informace o aplikaci pro generování tabulek ASEP. Aplikace slouží k zobrazování dat z Google Sheets tabulek na webové stránce ASEP (`https://asep-portal.lib.cas.cz/pro-zpracovatele/riv/konecne-soubory/`).
 
 ## Adresářová struktura
 
@@ -33,16 +33,29 @@ Konfigurace aplikace se provádí pomocí souboru documents.json, který se nach
 
 V tomto souboru je nutné vytvořit položku pro každou tabulku, která se má zobrazovat na webu. Položka musí obsahovat název tabulky, identifikátor tabulky a název shortcode, který se bude používat pro zobrazení tabulky. Dále je nutné určit, zda se má tabulka zobrazovat na webu.
 
-Konkrétně se jedná o následující strukturu:
+Konkrétně se jedná o následující strukturu (`/wp/tabulky-asep/documents.json`):
 
 `
 {
     "title": "<název tabulky>", 
     "id": "<identifikátor tabulky>" 
-    "shortcode": "<název shortcode>", 
+    "shortcode": "<název shortcodu>", 
     "active": true //true nebo false. 
 }
 `
+
+Spustit generování souboru .html návštěvou https://asep-portal.lib.cas.cz/wp/tabulky-asep/generate.php?id=<document-id> pro generování a získání názvu souboru .html.
+
+A vložit kód pro vytvoření zkráceného kódu do souboru functions.php:
+
+`
+add_shortcode('<název shortcodu>', function () {
+    ob_start();
+    require ABSPATH . 'tabulky-asep/output/<název souboru>.html';  
+    return ob_get_clean();
+});
+`
+
 ## Šablony
 
-Pro stránku `https://asep-portal.lib.cas.cz/pro-zpracovatele/riv/konecne-soubory/` používáme šablonu s názvem "Table", která se nachází v adresáři `/wp/wp-content/themes/knav3/`. V této šabloně je umístěn zkrácený kód `<name-of-the-shortcode>`.
+Pro stránku `https://asep-portal.lib.cas.cz/pro-zpracovatele/riv/konecne-soubory/` používáme šablonu s názvem "Table" (`table-template.php`), která se nachází v adresáři `/wp/wp-content/themes/knav3/`. V této šabloně je umístěn zkrácený kód `<název shortcodu>`.
