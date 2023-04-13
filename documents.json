@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Kontrola RIV",
+        "id": "1umW9VL6B6U3ZyjRkvYSQVnG55prnWFEcQ1-7E8CsUNw",
+        "shortcode": "riv_kontroly",
+        "active": true
+    },
+    {
+        "title": "aktualni_data_pro_RIV",
+        "id": "1W1NOA5N50c1LnwGmV7e3htR9pgaKv5eXHObBApV_AVc",
+        "shortcode": "aktualni_data_pro_riv",
+        "active": true
+    },
+    {
+        "title": "Sběr 2022 – konecne soubory",
+        "id": "1-B-o450QEds9IMoQZe9akza8pfd5GLr-3gXI9gz9ZHY1",
+        "shortcode": "sber_2022_konecne_soubory",
+        "active": false
+    },
+    {
+        "title": "Sběr 2021 – srpen",
+        "id": "1oyKmST-HvaqTZAjGopYpWtWyTlI5dH1XM_iOR_wq_Nw",
+        "shortcode": "sber_2021_srpen",
+        "active": false
+    },
+    {
+        "title": "Sběr 2021 – konečné soubory",
+        "id": "19sUbuXBzy4O_8_nCApjLjyEh3p6aixP3laJQm9zpNjA",
+        "shortcode": "sber_2021_konecne_soubory",
+        "active": false
+    },
+    {
+        "title": "Sběr 2020 – srpen",
+        "id": "11RhzvKENB-K_7P9k51zBjzvctSmQYkfXNJXi58TKCHQ",
+        "shortcode": "sber_2020_srpen",
+        "active": false
+    },
+    {
+        "title": "Sběr 2020 – konečné soubory",
+        "id": "1-sPP5_1qnN38dRzjnl4RYA47ptXQAt12jO35YKaq6js",
+        "shortcode": "sber_2020_konecne_soubory",
+        "active": false
+    },
+    {
+        "title": "Sběr 2019 – srpen",
+        "id": "12KW3FeGFUl8bToUu7YvEKe8TayfMVDeGx6fuI30jwBc",
+        "shortcode": "sber_2019_srpen",
+        "active": false
+    },
+    {
+        "title": "Sběr 2019",
+        "id": "1Jar3d5EaDzylnHIYhX3vJWHITSHM45-nxMOPbmHEtfY",
+        "shortcode": "sber_2019",
+        "active": false
+    },
+    {
+        "title": "Duplicity",
+        "id": "1SudNxKstnc-D3vF4ai2t4q91yX7EBL971vByxD9ZtNA",
+        "shortcode": "duplicity",
+        "active": false
+    },
+    {
+        "title": "Sběr 2018 - opravy srpen",
+        "id": "1ZKq2JJR0GLB3ZoH17V-GUsX_JHKWAOcHy8lsTW61sRA",
+        "shortcode": "sber_srpen_2018",
+        "active": false
+    },
+    {
+        "title": "Sběr 2018 - konečné soubory",
+        "id": "1C-hvGhRC6YLgiX8w_qeOGO7MFYnHOl8Z0w8N8Ye_R5I",
+        "shortcode": "sber_konecne_soubory",
+        "active": false
+    },
+    {
+        "title": "Zkušební tabulka",
+        "id": "1sDN_Ll4n1Mw1bs1oOG22EbGBudaZ85iJldoLq4NBZd0",
+        "shortcode": "zkusebni_tabulka",
+        "active": false
+    }
+]
